@@ -518,7 +518,7 @@ multiLineTradePlot("PuRd", 2, FALSE, FALSE)
 
 ![Age and Arrivals Per Year](img/24-multiline.png)
  
-I believe that these graphs have potential. I find the multiple curved overlapping lines quite hypnotic, but it is hard to interpret the actual age that each line represents.
+I believe that these graphs have potential. I find the multiple curved overlapping lines quite aesthetically pleasing, but it is hard to interpret the actual age that each line represents.
 
 I will further refine the second and fourth examples.
 
@@ -528,4 +528,3 @@ I will further refine the second and fourth examples.
 
 
 I think this kind of graph has a few fundamental flaws, it just isn't easy enough to see the curves that are buried at the bottom of the graphic. Some people might also find the contrast of the lines a bit unsettling.
-All the refined graphs can be found in the “Computer Generated Visualisations” folder.
