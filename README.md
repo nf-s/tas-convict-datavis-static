@@ -511,9 +511,9 @@ I believe that these graphs have potential. I find the multiple curved overlappi
 
 I will further refine the second and fourth examples.
 
-![Age and Arrivals Per Year](img/25-multiline.png)
+![Age and Arrivals Per Year](img/25-multiline-refined.png)
 
-![Age and Arrivals Per Year](img/26-multiline.png)
+![Age and Arrivals Per Year](img/26-multiline-refined.png)
 
 
 I think this kind of graph has a few fundamental flaws, it just isn't easy enough to see the curves that are buried at the bottom of the graphic. Some people might also find the contrast of the lines a bit unsettling.
