@@ -1,4 +1,6 @@
-# Tasmanian Convict Data Visualisations
+# Tasmanian Convict Data Visualisation
+
+This report was completed for a University Data Visualisation subject in 2017.
 
 A PDF version is available [here](final_report.pdf).
 
