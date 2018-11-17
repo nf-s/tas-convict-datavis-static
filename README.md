@@ -38,7 +38,7 @@ barplot(meanage.byyear$arrivage, names.arg=meanage.byyear$shipyear, main="Tasman
         ylab = "Mean Age", xlab="Year", col="red", border = NA, space =0.3)
 ```
 
-![Age and Arrivals Per Year](img\2-convict-age-arrivals.png)
+![Age and Arrivals Per Year](img/2-convict-age-arrivals.png)
  
 Extremely uninteresting result. The variation in mean age in the earlier years is only due to the small sample sizes for those years.
 
@@ -68,9 +68,9 @@ legend("topleft", rev(rownames(arrivals.year.tradered)), fill=rev(c("#ae017e","#
        title = "Occupation",  border=FALSE, box.col=FALSE)
 ```
 
-![Age and Arrivals Per Year](img\3-arrivals-occopuation.png)
+![Age and Arrivals Per Year](img/3-arrivals-occopuation.png)
 
-![Age and Arrivals Per Year](img\4-arrivals-occopation2.png)
+![Age and Arrivals Per Year](img/4-arrivals-occopation2.png)
  
 Pretty, but not any more informative than the first bar chart which only showed convict arrivals over years.
 
@@ -86,7 +86,7 @@ convicts.continuousvars<-data.frame(height=convicts$height, shipyear=convicts$sh
 pairs(convicts.continuousvars, panel=panel.smooth, pch=19, cex=.01, col="#444444")
 ```
 
-![Age and Arrivals Per Year](img\5-pairs-matrix-1.png)
+![Age and Arrivals Per Year](img/5-pairs-matrix-1.png)
  
 Because arrive age and year are only integers, there is a massive amount of overlap between points in each scatter plot. The jitter function introduces random normally distributed noise into the data - which somewhat naturally simulates the actual values of the data points (especially age - which is reasonably evenly distributed)
 
@@ -96,7 +96,7 @@ Because arrive age and year are only integers, there is a massive amount of over
 pairs(lapply(convicts.continuousvars, jitter, 5), panel=panel.smooth, pch=19, cex=.01, col="#888888")
 ```
 
-![Age and Arrivals Per Year](img\6-pairs-matrix-2.png)
+![Age and Arrivals Per Year](img/6-pairs-matrix-2.png)
  
 The graphs are now much more aesthetically interesting, but there aren't any really interesting relationships among the continuous variables. The relationship between age and height it a little too obvious - I don't any new insights into age/height can be gained from further plotting. The relationship between arrival age and year looks a bit more interesting.
 
@@ -113,12 +113,12 @@ axis(1, x.ticks, x.ticks, lwd=0, tck=-0.02, lwd.ticks=1)
 axis(2, y.ticks, y.ticks, lwd=0, tck=-0.02, lwd.ticks=1)
 ```
 
-![Age and Arrivals Per Year](img\7-scatterplot.png)
+![Age and Arrivals Per Year](img/7-scatterplot.png)
 
 I really like this plot. It's unfortunate that the relationship between age and year is quite plain (showed by the red LOESS line), but there is some interesting variability in the distribution of age over the years.
 I then refined the plot in Adobe Illustrator.
 
-![Age and Arrivals Per Year](img\8-scatterplot-refined.png)
+![Age and Arrivals Per Year](img/8-scatterplot-refined.png)
  
 The added transparency allows the clustered dots to generate a sort of heatmap, which almost shows the distribution of points along each variable.
 
@@ -151,11 +151,11 @@ plot(-d.y$y, d.y$x, ylim=range(y), xlim=-range(d.y$y), type='l', xaxt='n', yaxt=
 mtext("Convict Age vs Year", side=3, outer=TRUE, line=-3)
 ```
 
-![Age and Arrivals Per Year](img\9-density-scatter.png)
+![Age and Arrivals Per Year](img/9-density-scatter.png)
  
 The R graph is a bit ugly, as it was hard to get the proportions right, Illustrator allowed me to refine the plot with much more control.
 
-![Age and Arrivals Per Year](img\10-density-scatter-refined.png)
+![Age and Arrivals Per Year](img/10-density-scatter-refined.png)
  
 I really like this chart.
 
@@ -182,7 +182,7 @@ symbols(Tradecat.totals$arrivage, Tradecat.totals$shipyear, circles=radius, inch
 text(Tradecat.totals$arrivage, Tradecat.totals$shipyear, rownames(Tradecat.totals), cex=.75)
 ```
 
-![Age and Arrivals Per Year](img\11-bubble-occupation.png)
+![Age and Arrivals Per Year](img/11-bubble-occupation.png)
  
 I think this plot is uninteresting and confusing. I would prefer the arrival year to be plotted on the x axis, but for the labels to be readable they must be evenly distributed vertically (or they can overlap). Either way I think the data is too boring to justify further refining the plot.
 
@@ -213,11 +213,11 @@ symbols(rep(max(convicts.bygname.g100$shipyear),3), rep(min(convicts.bygname.g10
 text(rep(max(convicts.bygname.g100$shipyear),3), rep(min(convicts.bygname.g100$arrivage),3), as.character(legend.bubbles), cex=.75)
 ```
 
-![Age and Arrivals Per Year](img\12-bubble-names.png)
+![Age and Arrivals Per Year](img/12-bubble-names.png)
   
 This plot is much more successful than the last. Although, I still feel that the data isn't that interesting. The number of convicts with certain first names is interesting, but the average arrival year and average age axes are completely redundant. The average age values range from 24.5 to 27 and the average year only ranges from 1836 to 1840. The only reason the axes are included is that it provides a nice variation in circle position and it would be a waste to only plot the circles without any other information.
 
-![Age and Arrivals Per Year](img\13-bubble-names-refined.png)
+![Age and Arrivals Per Year](img/13-bubble-names-refined.png)
  
 While I think this graph is quite engaging, it doesn’t really offer any new interesting insights into the dataset.
 
@@ -246,7 +246,7 @@ mtext("Arrival Year", side=1, outer=TRUE, line=-1, cex = 0.75)
 par(x)
 ```
 
-![Age and Arrivals Per Year](img\14-occ-density.png)
+![Age and Arrivals Per Year](img/14-occ-density.png)
  
 I believe that this kind of plot has potential, it does need some further refining in order to be as easy to interpret as possible.
 The next example shows the distribution of convict arrival ages for each year.
@@ -273,7 +273,7 @@ mtext("Convict Age", side=1, outer=TRUE, line=-1, cex = 0.75)
 par(x)
 ```
 
-![Age and Arrivals Per Year](img\15-arrival-year-density.png)
+![Age and Arrivals Per Year](img/15-arrival-year-density.png)
  
 I do find this graph quite visually appealing, but I feel that there isn’t quite enough variation between convict age vs year to create a truly interesting graph. 
 
@@ -300,7 +300,7 @@ mtext("Arrival Year", side=1, outer=TRUE, line=-1, cex = 0.75)
 par(x)
 ```
 
-![Age and Arrivals Per Year](img\16-occ-density-line.png)
+![Age and Arrivals Per Year](img/16-occ-density-line.png)
 
 ## Linegraph matrix - Convict Trades with max year
 
@@ -342,11 +342,11 @@ mtext("Arrival Year", side=1, outer=TRUE, line=-1, cex = 0.75)
 par(x)
 ```
 
-![Age and Arrivals Per Year](img\17-occ-density-line-with-maxyear.png)
+![Age and Arrivals Per Year](img/17-occ-density-line-with-maxyear.png)
  
 I then used Illustrator to refine this graphic.
 
-![Age and Arrivals Per Year](img\18-occ-density-line-with-maxyear-refined.png)
+![Age and Arrivals Per Year](img/18-occ-density-line-with-maxyear-refined.png)
  
 This is definitely my favourite graphic that I have made for this unit. It could be improved if a small total was added to the right of each plot. And I’m not that happy with how everything is aligned.
 
@@ -365,7 +365,7 @@ trade.df$TradeCat<-with(convicts, TradeCat[match(trade.df$trade, trade)])
 treemap(trade.df, index=c("TradeCat", "trade"), vSize="Freq")
 ```
 
-![Age and Arrivals Per Year](img\19-occ-treemap.png)
+![Age and Arrivals Per Year](img/19-occ-treemap.png)
  
 ### Cut off at 2 convicts per trade
 
@@ -378,7 +378,7 @@ trade.df.reduced <- rbind(trade.df[trade.df$Freq>=trade.cutoff,], data.frame(tra
 treemap(trade.df.reduced, index=c("TradeCat", "trade"), vSize="Freq")
 ```
 
-![Age and Arrivals Per Year](img\20-occ-treemap.png)
+![Age and Arrivals Per Year](img/20-occ-treemap.png)
  
 I do quite like this and I believe that it does a good job at showing a large number of convict trades, how they can be organised into categories and the trade’s relative proportion, but it is too hard to read. It would take a very long time to refine and get up to scratch in Illustrator
 
@@ -487,33 +487,33 @@ multiLineTradePlot <- function(color.string, color.bias=1, rev.ages.print=FALSE,
 multiLineTradePlot("YlOrRd", 1, TRUE, FALSE)
 ```
 
-![Age and Arrivals Per Year](img\21-multiline.png)
+![Age and Arrivals Per Year](img/21-multiline.png)
 
 ```r
 multiLineTradePlot("YlGnBu", 0.5, TRUE, FALSE)
 ```
 
-![Age and Arrivals Per Year](img\22-multiline.png)
+![Age and Arrivals Per Year](img/22-multiline.png)
 
 ```r
 multiLineTradePlot("YlGnBu", 2, FALSE, FALSE)
 ```
 
-![Age and Arrivals Per Year](img\23-multiline.png)
+![Age and Arrivals Per Year](img/23-multiline.png)
 
 ```r
 multiLineTradePlot("PuRd", 2, FALSE, FALSE)
 ```
 
-![Age and Arrivals Per Year](img\24-multiline.png)
+![Age and Arrivals Per Year](img/24-multiline.png)
  
 I believe that these graphs have potential. I find the multiple curved overlapping lines quite hypnotic, but it is hard to interpret the actual age that each line represents.
 
 I will further refine the second and fourth examples.
 
-![Age and Arrivals Per Year](img\25-multiline.png)
+![Age and Arrivals Per Year](img/25-multiline.png)
 
-![Age and Arrivals Per Year](img\26-multiline.png)
+![Age and Arrivals Per Year](img/26-multiline.png)
 
 
 I think this kind of graph has a few fundamental flaws, it just isn't easy enough to see the curves that are buried at the bottom of the graphic. Some people might also find the contrast of the lines a bit unsettling.
