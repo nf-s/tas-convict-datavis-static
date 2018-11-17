@@ -7,8 +7,8 @@ All graphs were produced using R and a few were further refined using Adobe Illu
 While creating all the following graphics, I tried to keep some of Edward Tufte’s principles for graphical integrity in mind. 
 
 In my opinion, the most important are:
-> Inducing the viewer to “think about the substance rather than methodology, graphic design or technology of graphic design”
 
++ *Inducing the viewer to “think about the substance rather than methodology, graphic design or technology of graphic design”*
 + *“Avoid distorting what the data have to say”*
 + *"Show data variation - not design variation"*
 + *Maximising “data-ink ratio” – or to "prune out ink that fails to present fresh data-information"*
