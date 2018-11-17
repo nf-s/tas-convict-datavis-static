@@ -1,16 +1,18 @@
 # Tasmanian Convict Data Visualisations
 
+A PDF version is available [here](final_report.pdf).
 
 All graphs were produced using R and a few were further refined using Adobe Illustrator. Please forgive the average quality of prototype plots – R doesn’t do a very good job at exporting images.
 
 While creating all the following graphics, I tried to keep some of Edward Tufte’s principles for graphical integrity in mind. 
 
 In my opinion, the most important are:
-+ Inducing the viewer to “think about the substance rather than methodology, graphic design or technology of graphic design”
-+ “Avoid distorting what the data have to say”
-+ "Show data variation - not design variation"
-+ Maximising “data-ink ratio” – or to "prune out ink that fails to present fresh data-information"
-+ Avoiding “chartjunk”
+> Inducing the viewer to “think about the substance rather than methodology, graphic design or technology of graphic design”
+
++ *“Avoid distorting what the data have to say”*
++ *"Show data variation - not design variation"*
++ *Maximising “data-ink ratio” – or to "prune out ink that fails to present fresh data-information"*
++ *Avoiding “chartjunk”*
 
 Some of the graphics are also quite similar to the style of Flowing Data’s graphics, this is mainly because I used the same R base graphics library which Nathan Yau uses for Flowing Data, and some of the graphics were inspired by examples in his book “Visualise This”.
 
