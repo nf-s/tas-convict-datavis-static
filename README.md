@@ -413,10 +413,15 @@ for (current.trade in trades.g100) {
 }
 
 axis(1, at=largestTrade.years, labels=largestTrade.lineData$shipyear, tick = FALSE)
+```
  
 Data is too boring and there are too many overlapping lines.
-Age by year - multiple line graph
+
+## Age by year - multiple line graph
+
 These graphs contain lines for each convict age (in years) which represent the distribution of yearly convict arrivals for that particular age.
+
+```r
 library(RColorBrewer)
 
 multiLineTradePlot <- function(color.string, color.bias=1, rev.ages.print=FALSE, rev.colors=FALSE) {
