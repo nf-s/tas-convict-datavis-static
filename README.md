@@ -414,6 +414,8 @@ for (current.trade in trades.g100) {
 
 axis(1, at=largestTrade.years, labels=largestTrade.lineData$shipyear, tick = FALSE)
 ```
+
+![Age and Arrivals Per Year](img/21.1-multiline-trade.png)
  
 Data is too boring and there are too many overlapping lines.
 
